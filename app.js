@@ -3,11 +3,12 @@ const authRoutes = require('./routs/authRoutes.js');
 const cookieParser = require('cookie-parser');
 const path  = require('path')
 const mongoose = require('mongoose');
+var serveStatic = require('serve-static')
 require('dotenv').config();
 // app setUp
 const app = express();
 // middleware
-app.use(express.static('public'));
+app.use(serveStatic(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(cookieParser());
 

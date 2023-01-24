@@ -16,3 +16,6 @@ module.exports.logout_post = (req, res) => {
     res.send('post req to logout');
 }
 
+module.exports.chat_get = (req,res) => {
+    res.render('chat')
+}
