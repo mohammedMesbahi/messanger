@@ -5,7 +5,7 @@ module.exports.login_get = (req, res) => {
 }
 
 module.exports.login_post = (req, res) => {
-    res.send('post req to login_post')
+    
 }
 
 module.exports.chatPage_get = (req, res) => {
