@@ -10,4 +10,4 @@ router.post('/login',authController.login_post);
 // logout handle
 router.post('/logout',authController.logout_post);
 router.get('/chat',authController.chat_get)
-module.exports = router;
+module.exports = router; 
